@@ -8,7 +8,7 @@ export default function Login() {
 
     const navigation = useNavigation();
     const navigateToAbout = () => {
-        navigation.navigate('About'); // Nome da tela de destino definido na navegação
+        navigation.navigate('Sobre'); // Nome da tela de destino definido na navegação
     };
 
     return (
