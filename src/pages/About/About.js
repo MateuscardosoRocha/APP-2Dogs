@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { StyleSheet, Image, Text, View } from "react-native";
+import Menu from '../../components/Menu/Menu'
 
 
 export default function About() {
@@ -28,8 +29,9 @@ return(
    
         </View>
    
-     
+    
    
+     
   </View>
 )
 
@@ -114,5 +116,6 @@ const styles = StyleSheet.create({
       fontSize: 30,
       color: "#FFF",
     },
+   
   });
   

@@ -1,13 +1,22 @@
 import { View, Text, StyleSheet, TouchableOpacity, TextInput, ImageBackground, Image } from 'react-native'
 import React from 'react'
+import { useNavigation } from '@react-navigation/native';
 
-const index = () => {
+
+export default function Login() {
+ 
+    const navigation = useNavigation();
+    const navigateToAbout = () => {
+        navigation.navigate('About'); // Nome da tela de destino definido na navegação
+      };
+
+   
     return (
         <View style={styles.container}>
             <View style={styles.upperView}>
-                <ImageBackground style={styles.image}  source={require('./ouro_fino_skate_eletrico_nikon.png')}>
+                <ImageBackground style={styles.image}  source={require('../../../assets/ouro_fino_skate_eletrico_nikon.png')}>
                     <View style={styles.logoView}>
-                        <Image style={styles.logo} source={require('./logo_registrado.png')} />
+                        <Image style={styles.logo} source={require('../../../assets/logo_registrado.png')} />
                     </View>
                     <View>
                     </View>
@@ -27,7 +36,7 @@ const index = () => {
                 </ImageBackground>
             </View>
             <View style={styles.lowerView}>
-                <TouchableOpacity style={styles.login}>
+                <TouchableOpacity style={styles.login} onPress={navigateToAbout} >
                     <Text>Entrar</Text>
                 </TouchableOpacity>
                 <View style={styles.register}>
@@ -155,4 +164,3 @@ const styles = StyleSheet.create({
     }
 })
 
-export default index
