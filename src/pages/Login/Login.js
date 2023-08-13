@@ -8,7 +8,7 @@ export default function Login() {
 
     const navigation = useNavigation();
     const navigateToAbout = () => {
-        navigation.navigate('Sobre'); // Nome da tela de destino definido na navegação
+        navigation.navigate('About'); // Nome da tela de destino definido na navegação
     };
 
     return (
@@ -19,15 +19,15 @@ export default function Login() {
                         <View style={styles.logoView}>
                             <Image style={styles.logo} source={require('../../../assets/logo_registrado.png')} />
                         </View>
-                        <View>
-                        </View>
                         <View style={styles.inputView}>
                             <View style={styles.welcomeView}>
                                 <Text style={styles.welcomeText}>Entre para o</Text>
                                 <Text style={styles.welcomeText}>Universo Two Dogs</Text>
                             </View>
-                            <TextInput style={styles.input} placeholder='E-mail'></TextInput>
-                            <TextInput style={styles.input} placeholder='Senha'></TextInput>
+                            <View style={styles.textInputView}>
+                                <TextInput style={styles.input} placeholder='E-mail'></TextInput>
+                                <TextInput style={styles.input} placeholder='Password'></TextInput>
+                            </View>
                             <View style={styles.forgotPasswordView}>
                                 <TouchableOpacity>
                                     <Text style={styles.forgotPassword}>Esqueceu sua senha?</Text>
@@ -75,15 +75,17 @@ const styles = StyleSheet.create({
         height: '100%',
     },
     logoView: {
-        marginTop: 70,
         display: 'flex',
-        justifyContent: 'center',
+        flex: 0.5,
         alignItems: 'center',
+
     },
     logo: {
         resizeMode: 'contain',
-        width: 250,
-        height: 200,
+        marginTop: '25%',
+        width: '60%',
+        height: '60%',
+
     },
     lowerView: {
         display: 'flex',
@@ -92,32 +94,44 @@ const styles = StyleSheet.create({
     },
     inputView: {
         display: 'flex',
+        flex: 0.5,
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 50
+
     },
     welcomeView: {
         display: 'flex',
         alignItems: 'center',
         width: '70%',
-        marginBottom: 44,
+        flex: 0.3,
+        marginBottom: 0
     },
     welcomeText: {
-        fontSize: 26,
         color: '#ffffff',
+        fontSize: 27,
         fontWeight: 'bold',
+    },
+    textInputView: {
+        width: '100%',
+        flex: 0.4,
+        display: 'flex',
+        alignItems: 'center',
+
     },
     input: {
         backgroundColor: '#ffffff',
-        padding: 16,
         width: '70%',
+        flex: 0.5,
         marginBottom: 10,
+        paddingStart: 10,
         borderRadius: 5,
     },
     forgotPasswordView: {
         display: 'flex',
+        flex: 0.3,
         width: '70%',
         alignItems: 'flex-end',
+
     },
     forgotPassword: {
         color: 'rgba(255, 255, 255, 0.6)',
@@ -137,9 +151,7 @@ const styles = StyleSheet.create({
         width: '70%',
         padding: 16,
         borderRadius: 5,
-        transform: [
-            { translateY: -20 }
-        ]
+        marginTop: '-6.5%'
     },
     register: {
         display: 'flex',
