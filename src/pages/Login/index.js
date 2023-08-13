@@ -5,7 +5,7 @@ const index = () => {
     return (
         <View style={styles.container}>
             <View style={styles.upperView}>
-                <ImageBackground style={styles.image} source={require('./ouro_fino_skate_eletrico_nikon.png')}>
+                <ImageBackground style={styles.image}  source={require('./ouro_fino_skate_eletrico_nikon.png')}>
                     <View style={styles.logoView}>
                         <Image style={styles.logo} source={require('./logo_registrado.png')} />
                     </View>
@@ -51,47 +51,50 @@ const styles = StyleSheet.create({
     },
     upperView: {
         display: 'flex',
-        backgroundColor: "blue",
         flex: 0.7,
         justifyContent: 'space-around',
     },
     image: {
         height: '100%',
+        width: '100%'
     },
     logoView: {
-        marginTop: 50,
+        marginTop: 70,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
     },
     logo: {
         resizeMode: 'contain',
-        width: 200,
+        width: 250,
         height: 200,
     },
     lowerView: {
         display: 'flex',
         flex: 0.3,
         alignItems: 'center',
+        
     },
     inputView: {
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 50
     },
     welcomeView: {
         display: 'flex',
         alignItems: 'center',
         width: '70%',
-        marginBottom: 30,
+        marginBottom: 44,
     },
     welcomeText: {
-        fontSize: 22,
+        fontSize: 26,
         color: '#ffffff',
         fontWeight: 'bold',
     },
     input: {
         backgroundColor: '#ffffff',
-        padding: 6,
+        padding: 16,
         width: '70%',
         marginBottom: 10,
         borderRadius: 5,
@@ -99,10 +102,11 @@ const styles = StyleSheet.create({
     forgotPasswordView: {
         display: 'flex',
         width: '70%',
+       
         alignItems: 'flex-end',
     },
     forgotPassword: {
-        color: '#FFFFFF',
+        color: 'rgba(255, 255, 255, 0.6)',
         fontWeight: 'bold'
     },
     login: {
@@ -111,7 +115,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: "#F4C030",
         width: '70%',
-        padding: 10,
+        padding: 16,
         borderRadius: 5,
         transform: [
             { translateY: -20 }
@@ -121,17 +125,24 @@ const styles = StyleSheet.create({
         display: 'flex',
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'flex-end',
+        justifyContent: 'center',
         backgroundColor: '#ffffff',
         paddingBottom: '8%',
         width: '100%',
+        
+        
     },
     registerText: {
         width: '50%',
         paddingBottom: 20,
+        fontWeight: 'extra-bold'
+
+        
     },
     registerInfo: {
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        textAlign: 'center',
+       
     },
     btnRegister: {
         display: 'flex',
@@ -139,7 +150,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: "#CCCCCC",
         width: '70%',
-        padding: 10,
+        padding: 16,
+        borderRadius: 6,
     }
 })
 
