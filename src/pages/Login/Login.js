@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, TouchableOpacity, TextInput, ImageBackground, Image } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, TextInput, ImageBackground, Image, StatusBar } from 'react-native'
 import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
@@ -13,6 +13,7 @@ export default function Login() {
 
     return (
         <View style={styles.container}>
+        <StatusBar backgroundColor='#000000' barStyle='light-content' />
             <View style={styles.upperView}>
                 <ImageBackground style={styles.image} source={require('../../../assets/ouro_fino_skate_eletrico_nikon.png')}>
                     <LinearGradient style={styles.gradient} colors={['transparent', '#000000']}>
