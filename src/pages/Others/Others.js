@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
         marginTop: 5
     },
     btn: {
-      width: 290.41,
+      width: '100%',
       height: 46.9,
       marginTop: 21,
       alignSelf: 'center',

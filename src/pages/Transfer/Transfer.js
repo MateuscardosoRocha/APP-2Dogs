@@ -9,7 +9,7 @@ return(
     <View style={styles.container}>
         <View style={styles.master}>
 
-        <Text  style={styles.title}>Certificado de Transferência </Text>
+        <Text  style={styles.title}>Termo de Transferência </Text>
     <Image source={require("../../../assets/pliage.png")} style={styles.img} />
 
     <View style={styles.containerDetails}> 
@@ -18,8 +18,8 @@ return(
     </View>
    
     <View style={styles.containerDetailsInfos}> 
-      <Text style={styles.titleDetails}>Certificado de Transferência:</Text>
-      <Text style={styles.titleDetail}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</Text>
+      <Text style={styles.titleDetails}>Termo de Transferência:</Text>
+      <Text style={styles.titleDetail}>Declaram-se para os devidos fins e efeitos que TWO DOGS LTDA, inscrita no CNPJ: 41.678.958/0001-13 transfere a posse da Bicicleta Pliage Alloy Elétrica, Número de Série: HXJ937HAHG0-3, - para Lucas Henrique Zeferino. Por essa transferência foi pago o valor de R$ 8.350,50 (Oito Mil Trezentos e Cinquenta Reais e Cinquenta Centavos) em 14/08/2023  </Text>
         <TouchableOpacity style={styles.btn}>
             <Text style={{fontSize: 16, fontWeight: 'bold'}}>Transferir</Text>
         </TouchableOpacity>
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     title: {
       color: "#FFF",
       fontSize: 26,
-      marginTop: 20,
+      marginTop: 26,
       fontWeight: 'bold',
       textAlign: 'center',
       marginBottom: 31,
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       alignSelf: 'center',
       justifyContent: 'center',
-      width: '80%',
+      width: '100%',
       borderRadius: 5,
       backgroundColor: "#fff",
      

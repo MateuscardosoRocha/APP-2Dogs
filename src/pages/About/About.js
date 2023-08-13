@@ -1,8 +1,6 @@
 import React from 'react'
 
 import { StyleSheet, Image, Text, View } from "react-native";
-import Menu from '../../components/Menu/Menu'
-
 
 export default function About() {
 return(
@@ -25,6 +23,8 @@ return(
       <Text style={styles.titleDetail}>Modificações: <Text style={styles.span}>Canote</Text></Text>
       <Text style={styles.titleDetail}>Documento: <Text style={styles.span}>Two Dogs</Text></Text>
       <Text style={styles.titleDetail}>Data da Compra: <Text style={styles.span}>10/08/2023</Text></Text>
+      <Text style={styles.titleDetail}>Proprietário: <Text style={styles.span}>Lucas Henrique Zeferino</Text></Text>
+      <Text style={styles.titleDetail}>Valor: <Text style={styles.span}>R$ 8.350,50 </Text></Text>
     </View>
    
         </View>

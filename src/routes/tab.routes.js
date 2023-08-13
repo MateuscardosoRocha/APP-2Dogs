@@ -12,17 +12,17 @@ export default function TabRoutes() {
 
 
     return (
-        <Tab.Navigator screenOptions={{ headerShown: false }} initialRouteName='Login'>
+        <Tab.Navigator screenOptions={{ headerShown: false }} initialRouteName='Sair'>
 
             <Tab.Screen
-                name='About'
+                name='Sobre'
                 component={About}
                 options={{
                     tabBarIcon: ({ color, size }) => <Feather name='info' color={color} size={size} />
                 }}
             />
             <Tab.Screen
-                name='Others'
+                name='Serviços'
                 component={Others}
                 options={{
                     tabBarIcon: ({ color, size }) => <Feather name='file-minus' color={color} size={size} />
@@ -30,7 +30,7 @@ export default function TabRoutes() {
 
             />
             <Tab.Screen
-                name='Transfer'
+                name='Transferência'
                 component={Transfer}
                 options={{
                     tabBarIcon: ({ color, size }) => <Feather name='edit-2' color={color} size={size} />
@@ -38,7 +38,7 @@ export default function TabRoutes() {
             />
 
             <Tab.Screen
-                name='Login'
+                name='Sair'
                 component={Login}
                 options={{ tabBarStyle: { display: 'none' }, tabBarIcon: ({ color, size }) => <Feather name='log-out' color={color} size={size} /> }}
 
