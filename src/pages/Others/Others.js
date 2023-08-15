@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     marginBottom: '5%',
   },
   title: {
-    fontSize: 27,
+    fontSize: 24,
     fontWeight: 'bold',
     color: "#ffffff",
   },
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     padding: '3%',
   },
   titleDetails: {
-    fontSize: 24,
+    fontSize: 21,
     fontWeight: 'bold',
     color: "#ffffff",
   },

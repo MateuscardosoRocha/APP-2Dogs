@@ -37,15 +37,15 @@ export default function TabRoutes() {
                 }}
             />
 
-            <Tab.Screen
-                name='Sair'
-                component={Login}
-                options={{ tabBarStyle: { display: 'none' }, tabBarIcon: ({ color, size }) => <Feather name='log-out' color={color} size={size} /> }}
-
-
-
-            />
-
+             
+                <Tab.Screen
+                    name='Sair'
+                    component={Login}
+                    options={{ tabBarStyle: { display: 'none' }, tabBarIcon: ({ color, size }) => <Feather name='log-out' color={color} size={size} /> }}
+    
+    
+    
+                />
         </Tab.Navigator>
     )
 }
